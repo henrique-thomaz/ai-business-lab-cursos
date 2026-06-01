@@ -547,6 +547,34 @@ body::before {
   .courses-grid { grid-template-columns: 1fr; }
   .hero-stat-n { font-size: 20px; }
 }
+/* ---- DOCS BUTTONS ---- */
+.docs-section {
+  text-align: center;
+  padding: 48px 24px 56px;
+  border-top: 1px solid var(--border);
+}
+.docs-section-label {
+  font-family: var(--font-display); font-size: 11px; font-weight: 600;
+  letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--text-muted); margin-bottom: 16px;
+}
+.docs-buttons {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px;
+}
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--surface); border: 1px solid var(--border);
+  color: var(--text-secondary); font-family: var(--font-display); font-size: 12px; font-weight: 600;
+  padding: 8px 18px; border-radius: 100px; cursor: pointer;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+.btn-primary:hover {
+  border-color: rgba(167,139,250,0.4);
+  color: var(--c-base);
+  background: var(--c-base-bg);
+  transform: translateY(-1px);
+}  
 </style>
 </head>
 <body>
@@ -1129,7 +1157,23 @@ body::before {
   </div>
 
 </main>
-
+<section class="docs-section">
+  <p class="docs-section-label">Acesse as documentações</p>
+  <div class="docs-buttons">
+    <a href="https://miro.com/welcomeonboard/..." class="btn-primary" target="_blank">
+      <i class="fa-solid fa-diagram-project"></i> Miro
+    </a>
+    <a href="https://fiapcom-my.sharepoint.com/...FAQ" class="btn-primary" target="_blank">
+      <i class="fa-solid fa-file-lines"></i> FAQ e Persona
+    </a>
+    <a href="https://fiapcom-my.sharepoint.com/...Apresentacao" class="btn-primary" target="_blank">
+      <i class="fa-solid fa-file-lines"></i> Apresentação e Pilares
+    </a>
+    <a href="https://fiapcom-my.sharepoint.com/...Ponto" class="btn-primary" target="_blank">
+      <i class="fa-solid fa-file-lines"></i> Ponto de encontro - Business &amp; Leadership
+    </a>
+  </div>
+</section>
 <!-- FOOTER -->
 <footer class="page-footer">
   <p><strong>AI Business Lab</strong> · Hub de Formação Prática em IA · 5 trilhas · 28 cursos</p>
